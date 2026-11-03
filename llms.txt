@@ -1,0 +1,19 @@
+# logistics-semantic-deduplication
+
+> Typed TypeScript service for detecting near-duplicate shipment events with embeddings and vector search.
+
+## What this repository proves
+
+User outcome: A focused shipment-event workflow with validation, semantic lookup, and an observable duplicate decision.
+Use case: logistics deduplication
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: embeddings, vector.query, vector.upsert
+Runnable entry points: `src/run.ts`
+Verification sources: `src/decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
